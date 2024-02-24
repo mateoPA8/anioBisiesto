@@ -10,4 +10,7 @@ describe("Bisiesto", () => {
   it("deberia devolver false si el anio no es divisible entre 4", () => {
     expect(esBisiesto(2017)).toEqual(false);
   });
+  it("deberia devolver true si el anio es divisible entre 4 pero no por 100", () => {
+    expect(esBisiesto(2016)).toEqual(true);
+  });
 });
