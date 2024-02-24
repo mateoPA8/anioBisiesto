@@ -7,4 +7,7 @@ describe("Bisiesto", () => {
   it("deberia devolver false si el anio es 5", () => {
     expect(esBisiesto(5)).toEqual(false);
   });
+  it("deberia devolver false si el anio no es divisible entre 4", () => {
+    expect(esBisiesto(2017)).toEqual(false);
+  });
 });
