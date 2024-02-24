@@ -16,4 +16,10 @@ describe("Bisiesto", () => {
   it("deberia devolver false si el anio es divisible entre 100 pero no por 400", () => {
     expect(esBisiesto(1800)).toEqual(false);
   });
+  it("deberia devolver false si el anio es divisible entre 100 pero no por 400", () => {
+    expect(esBisiesto(1800)).toEqual(false);
+  });
+  it("deberia devolver true si el anio es divisible entre 400", () => {
+    expect(esBisiesto(2000)).toEqual(true);
+  });
 });

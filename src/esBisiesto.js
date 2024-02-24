@@ -7,6 +7,10 @@ function esBisiesto(anio){
     {
         return false;
     }
+    if(anio%400==0)
+    {
+        return true;
+    }
     else
     {
         return false;
